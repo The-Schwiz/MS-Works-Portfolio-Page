@@ -1,0 +1,328 @@
+/* Sets background colour */
+body {
+  background-color: rgb(220, 221, 246);
+
+}
+
+/* Flex container for header */
+header {
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(14, 14, 84);
+  height: 75px;
+
+}
+
+/* Header h1 position, size, and colour */
+header h1 {
+  font-size: 40px;
+  color: white;
+  line-height: normal;
+  flex: 1;
+  padding-top: 20px;
+  padding-left: 10px;
+
+}
+
+/* Adds glow to "Work" in h1 */
+.glow {
+  color: rgb(199, 215, 236);
+  text-shadow: -1px 1px 8px rgb(40, 131, 235), 1px -1px 8px rgb(123, 126, 175);
+
+
+
+}
+
+/* nav container flex box and content position */
+nav {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 30px;
+
+}
+
+/* Position of nav links */
+li {
+  display: inline-flex;
+  padding: 10px;
+  margin-right: 20px;
+
+}
+
+/* Style of nav links */
+ul li a {
+  text-decoration: none;
+  font-weight: 600;
+  color: rgb(209, 233, 246);
+  opacity: 0.6;
+
+
+}
+
+/* nav links glow with fade transition on hover  */
+a:hover {
+  color: rgb(137, 182, 240);
+  text-shadow: -1px 1px 8px rgb(146, 189, 238), 1px -1px 8px rgb(229, 229, 240);
+  opacity: 1;
+  transition: opacity 1s;
+
+}
+
+/* About position, styling, box shadow, and gradient */
+section.about {
+  margin: 40px 30px 50px 30px;
+  padding: 3%;
+  text-align: center;
+  background-color: rgb(37, 47, 179);
+  border-radius: 10px;
+  box-shadow: 5px 10px rgb(194, 194, 243);
+  background: linear-gradient(to bottom, rgb(44, 54, 199), rgb(30, 9, 94));
+
+
+}
+
+/* Highlights about on hover */
+.about:hover {
+  color: rgb(109, 140, 225);
+  box-shadow: 1px 5px 12px 5px rgb(85, 152, 228), 10px 10px 8px rgb(172, 176, 241);
+
+}
+
+/* about p text styling and position */
+.about p {
+  color: white;
+  font-size: 20px;
+  line-height: normal;
+  margin-top: 17px;
+
+}
+
+/* h2 position, stly, and size */
+h2 {
+  color: white;
+  font-size: 25px;
+  padding-top: 2px;
+
+}
+
+/* Places all portfolio cards in a flexbox  */
+div.skill-categories {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  position: relative;
+  bottom: 20px;
+
+}
+
+/* Determines card spacing and rounded corners */
+.card {
+  margin: 10px;
+  border-radius: 0 0 10px 10px;
+
+}
+
+/* card img size and rounded corners  */
+.card img {
+  width: 400px;
+  border-radius: 0 0 10px 10px;
+  max-height: 300px;
+
+}
+
+/* tooltip position and display type  */
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+/* Tooltip text, background colour, radius, transition, size, and position*/
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 130px;
+  background-color: rgb(37, 47, 179);
+  color: #fff;
+  text-align: center;
+  padding: 5px;
+  border-radius: 6px;
+  margin: 2px 0 0 2px;
+  position: absolute;
+  opacity: 0;
+  transition: opacity 1s;
+  box-shadow: 5px 6px rgb(155, 143, 209, 0.4);
+
+
+}
+
+/* Show the tooltip text when you mouse over the tooltip container with a fade in transition */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* Card h2 styling and position */
+.card h2 {
+  text-align: center;
+  background-color: rgb(37, 47, 179);
+  color: white;
+  font-size: 15px;
+  height: 20px;
+  border-radius: 10px 10px 0 0;
+
+}
+
+/* Gives card glow on hover  */
+.card:hover {
+  color: rgb(109, 140, 225);
+  box-shadow: 1px 5px 12px rgb(85, 152, 228), 10px 10px 8px rgb(172, 176, 241);
+
+}
+
+/* From border, background colour, size, and content orientation */
+form {
+  border-top: solid black;
+  background-color: rgb(14, 14, 84);
+  width: 100%;
+  align-items: center;
+
+}
+
+/* Form header styling and position */
+form h3 {
+  margin: 10px;
+  padding-bottom: 4px;
+  text-align: center;
+  color: white;
+  font-size: 20px;
+
+}
+
+/* Form p style and position */
+form p {
+  color: white;
+  text-align: center;
+  align-items: center;
+  padding: 7px;
+  position: relative;
+  bottom: 10px;
+
+}
+
+/* Text input size and position */
+.text-input {
+  min-width: 300px;
+  border-radius: 5px;
+
+}
+
+/* Button size, position, and bolding */
+button {
+  margin: 10px;
+  padding: 5px 15px 5px 15px;
+  border-radius: 8px;
+  font-weight: 600;
+
+}
+
+/* Button glows on hover and curser becomes pointer */
+button:hover {
+  color: rgb(109, 140, 225);
+  box-shadow: -1px 1px 8px rgb(85, 152, 228), 1px -1px 8px rgb(172, 176, 241);
+  cursor: pointer;
+
+}
+
+/* Comment box size */
+#comment {
+  width: 350px;
+  min-height: 75px;
+
+}
+
+/* Footer style and position */
+footer {
+  text-align: center;
+  padding-top: 5px;
+  margin: 15px;
+  position: relative;
+  bottom: 5px;
+  color: black;
+
+}
+
+/* Size and position of wave hand  */
+.wave {
+  font-size: 30px;
+  margin-bottom: 6px;
+}
+
+/* Defines hand is content to be displayed */
+.waving:before {
+  content: attr(data-hover);
+}
+
+/* Defines waving animation name, duration, loop, and point aroun which transformation is applied */
+.waving {
+  animation-name: wave-animation;
+  animation-duration: 3.3s;
+  animation-iteration-count: infinite;
+  transform-origin: 53% 53%;
+}
+
+/* Defines temporal starting and ending points, as wel as rotation parameters for hand wave */
+@keyframes wave-animation {
+  0% {
+    transform: rotate(0.0deg)
+  }
+
+  10% {
+    transform: rotate(14.0deg)
+  }
+
+  20% {
+    transform: rotate(-8.0deg)
+  }
+
+  30% {
+    transform: rotate(14.0deg)
+  }
+
+  40% {
+    transform: rotate(-4.0deg)
+  }
+
+  50% {
+    transform: rotate(10.0deg)
+  }
+
+  60% {
+    transform: rotate(0.0deg)
+  }
+
+  100% {
+    transform: rotate(0.0deg)
+  }
+}
+
+/* At screen width of 600ox or less the header is displayed in flex column and is centered */
+@media screen and (max-width: 600px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+}
+
+/* At screen width of 600ox or less the nav links are displayed in flex column and centered */
+@media screen and (max-width: 600px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: rgb(14, 14, 84);
+    height: 20px;
+  }
+
+}

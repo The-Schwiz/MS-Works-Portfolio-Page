@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MS Works</title>
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+</head>
+
+<body>
+
+    <header>
+        <!-- defines which word to add glow to -->
+        <h1>MS <span class="glow">Works</span></h1>
+        <nav>
+            <ul>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="https://github.com/The-Schwiz" target="_blank">Github</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about" class="about">
+            <h2>About</h2>
+            <p>Max Schwartz is a multifaceted creative with several projects on the go. As a musician, Max has released
+                singles and music videos reaching thousands of listeners. As a web developer, he is honing is skills
+                through coding bootcamp at The University of Toronto while building his portfolio. As someone who cares
+                deeply about mental health, Max has created a mobile application for people to express themselves
+                anonymously to a community and gain support. Reach out in the contact form below to learn more!</p>
+        </section>
+        <div class="skill-categories">
+            <section id="portfolio" class="card">
+                <h2>Music</h2>
+                <!-- Adds tooltip description to portfolil images -->
+                <div class="tooltip">
+                    <span class="tooltiptext">Click to listen to my tunes on Spotify!</span>
+                    <!-- target="_blank" opens link in new tab  -->
+                    <a href="https://open.spotify.com/artist/21abeuIVkxjNjpBGv1Vmcl" target="_blank">
+                        <img src="./assets/images/music.png" alt="max with guitar" />
+                    </a>
+                </div>
+            </section>
+            <section class="card">
+                <h2>Web Development</h2>
+                <div class="tooltip">
+                    <span class="tooltiptext">Click to view a deployed web application!</span>
+                    <a href="https://the-schwiz.github.io/html-git-css-challenge-1/" target="_blank">
+                        <img src="./assets/images/website.png" alt="website example" /></a>
+                </div>
+            </section>
+            <section class="card">
+                <h2>Marbl</h2>
+                <div class="tooltip">
+                    <span class="tooltiptext">Click to visit the Marbl website!</span>
+                    <a href="https://marbl.app" target="_blank">
+                        <img src="./assets/images/marbl.png" alt="marbl app landing page image" /></a>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <form id="contact">
+        <h3>Get in Touch!</h3>
+        <p>
+            <label for="username">Name:</label>
+            <input class="text-input" id="username" type="text" placeholder="First Last" />
+        </p>
+        <p>
+            <label for="email">E-mail:</label>
+            <input class="text-input" id="email" type="text" placeholder="me@example.com" />
+        </p>
+        <p>
+            <label for="comment"></label>
+            <textarea class="text-input" id="comment" placeholder="What's up?!"></textarea>
+        </p>
+        <p>
+            <input class="checkbox" id="agreement" type="checkbox" />
+            <label for="agreement">I agree to share my e-mail address with MS Works</label>
+        </p>
+        <p>
+            <button>Send It!</button>
+        </p>
+    </form>
+    <footer>
+        <!-- defines class for CSS animation  -->
+        <div class="waving" data-hover>
+            <p class=wave>👋</p>
+        </div>
+        <p>💙Thanks for coming by, you absolute legend!💙</p>
+    </footer>
+
+
+</body>
+
+</html>
