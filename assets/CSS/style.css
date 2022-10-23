@@ -29,8 +29,6 @@ header h1 {
   color: rgb(199, 215, 236);
   text-shadow: -1px 1px 8px rgb(40, 131, 235), 1px -1px 8px rgb(123, 126, 175);
 
-
-
 }
 
 /* nav container flex box and content position */
@@ -56,7 +54,6 @@ ul li a {
   color: rgb(209, 233, 246);
   opacity: 0.6;
 
-
 }
 
 /* nav links glow with fade transition on hover  */
@@ -77,7 +74,6 @@ section.about {
   border-radius: 10px;
   box-shadow: 5px 10px rgb(194, 194, 243);
   background: linear-gradient(to bottom, rgb(44, 54, 199), rgb(30, 9, 94));
-
 
 }
 
@@ -116,7 +112,7 @@ div.skill-categories {
 
 }
 
-/* Determines card spacing and rounded corners */
+/* Determines card spacing and rounded corners. I considered my avatar to be the image of me with guitar. Since it was a close up image I decided not to make it larger as it made the page look weird */
 .card {
   margin: 10px;
   border-radius: 0 0 10px 10px;
@@ -151,7 +147,6 @@ div.skill-categories {
   opacity: 0;
   transition: opacity 1s;
   box-shadow: 5px 6px rgb(155, 143, 209, 0.4);
-
 
 }
 
@@ -260,6 +255,7 @@ footer {
 /* Defines hand is content to be displayed */
 .waving:before {
   content: attr(data-hover);
+
 }
 
 /* Defines waving animation name, duration, loop, and point aroun which transformation is applied */
@@ -268,6 +264,7 @@ footer {
   animation-duration: 3.3s;
   animation-iteration-count: infinite;
   transform-origin: 53% 53%;
+
 }
 
 /* Defines temporal starting and ending points, as wel as rotation parameters for hand wave */
@@ -303,6 +300,7 @@ footer {
   100% {
     transform: rotate(0.0deg)
   }
+
 }
 
 /* At screen width of 600ox or less the header is displayed in flex column and is centered */
